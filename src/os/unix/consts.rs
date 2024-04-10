@@ -69,6 +69,7 @@ mod posix {
 
             target_os = "macos",
             target_os = "ios",
+            target_os = "tvos",
             target_os = "freebsd",
             target_os = "dragonfly",
             target_os = "openbsd",
@@ -103,6 +104,7 @@ mod posix {
 
             target_os = "macos",
             target_os = "ios",
+            target_os = "tvos",
             target_os = "freebsd",
             target_os = "dragonfly",
             target_os = "openbsd",
@@ -147,6 +149,7 @@ mod posix {
         } else if #[cfg(any(
             target_os = "macos",
             target_os = "ios",
+            target_os = "tvos",
         ))] {
             pub(super) const RTLD_GLOBAL: c_int = 8;
         } else if #[cfg(any(
@@ -188,6 +191,7 @@ mod posix {
         } else if #[cfg(any(
             target_os = "macos",
             target_os = "ios",
+            target_os = "tvos",
         ))] {
             pub(super) const RTLD_LOCAL: c_int = 4;
         } else if #[cfg(any(

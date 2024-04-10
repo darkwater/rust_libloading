@@ -275,6 +275,7 @@ impl Library {
                 target_os = "openbsd",
                 target_os = "macos",
                 target_os = "ios",
+                target_os = "tvos",
                 target_os = "solaris",
                 target_os = "illumos",
                 target_os = "redox",
